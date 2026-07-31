@@ -323,14 +323,11 @@ section {
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: var(--azul-acento) /*transparent*/;
   color: var(--blanco);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
 
 .btn-gold {
   background-color: var(--dorado);

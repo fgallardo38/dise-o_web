@@ -1,17 +1,16 @@
-# Gallardo Service Store - Plataforma Web Oficial
+# Gallardo Service Store - Sitio Web Oficial
 
-Sitio web profesional, moderno y responsivo para **Gallardo Service Store**, especialistas en soporte técnico informático, reparación de hardware, soluciones de software, redes y ciberseguridad.
+Proyecto final para la asignatura de **Diseño Web (5to Ciclo - ISTP Argentina)**.
 
-Desarrollado para la asignatura de **Diseño Web (5to Ciclo - ISTP Argentina)**.
+Sitio web responsivo y moderno desarrollado para **Gallardo Service Store**, dedicado a servicios de soporte técnico informático, reparación de hardware, soluciones de software, redes y mantenimiento.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5 Semántico**: Estructuración pura, accesible y optimizada para SEO.
-- **CSS3 Avanzado**: Variables CSS, layouts con Flexbox y CSS Grid, efectos de Glassmorphism, degradados y media queries adaptativas.
-- **JavaScript Vanilla (ES6+)**: Control de navegación, menú hamburguesa accesible, animaciones de revelado con `IntersectionObserver`, filtrado dinámico de servicios, contador de caracteres y validación de formularios en tiempo real.
-- **FontAwesome 6.5**: Iconografía vectorial integrada.
+- **HTML5**: Maquetación semántica estructurada (etiquetas semánticas, `<details>`, `<summary>`, validación nativa de formularios).
+- **CSS3**: Diseño adaptativo con Flexbox y CSS Grid, variables CSS, pseudoclases `:checked`, transiciones y media queries para dispositivos móviles.
+- **FontAwesome 6.5**: Iconografía vectorial para mejorar el diseño visual.
 
 ---
 
@@ -20,16 +19,14 @@ Desarrollado para la asignatura de **Diseño Web (5to Ciclo - ISTP Argentina)**.
 ```
 trabajo web/
 ├── css/
-│   └── style.css          # Hoja de estilos global y componentes
-├── js/
-│   └── main.js            # Módulo JavaScript principal con arquitectura limpia
+│   └── style.css          # Estilos globales y maquetación adaptativa
 ├── img/
-│   └── logo.png           # Logotipo y assets gráficos
-├── index.html             # Página principal / Inicio
-├── nosotros.html          # Historia, equipo, misión y valores
-├── servicios.html         # Catálogo interactivo de servicios y tabla comparativa
-├── contacto.html          # Formulario de contacto, ubicación y preguntas frecuentes (FAQ)
-├── README.md              # Documentación del proyecto
+│   └── logo.png           # Logotipo y recursos gráficos
+├── index.html             # Página de inicio
+├── nosotros.html          # Historia, equipo y habilidades
+├── servicios.html         # Catálogo de servicios y tabla comparativa
+├── contacto.html          # Formulario de contacto y preguntas frecuentes (FAQ)
+├── README.md              # Presentación del proyecto
 └── .gitignore             # Archivos ignorados por Git
 ```
 
@@ -37,15 +34,15 @@ trabajo web/
 
 ## 💻 Características Principales
 
-1. **Arquitectura Limpia & SoC (Separación de Responsabilidades)**: 100% libre de estilos inline y manipuladores `onclick` en HTML.
-2. **Diseño Responsivo**: Adaptado perfectamente a móviles, tablets y monitores de escritorio.
-3. **Sección de Servicios Dinámica**: Filtrado en tiempo real por categoría (Hardware, Software, Redes, Seguridad, Datos).
-4. **Formulario de Contacto Interactivo**: Validación previa al envío con retroalimentación visual al usuario y simulación de procesamiento.
-5. **Acordeón FAQ Accesible**: Preguntas frecuentes desplegables manejadas dinámicamente con JavaScript.
+1. **Diseño Responsivo**: Adaptación a pantallas móviles, tablets y computadoras de escritorio.
+2. **Navegación Móvil en CSS Puro**: Menú desplegable hamburguesa implementado con la técnica `:checked` sin JavaScript.
+3. **Catálogo Interactivo**: Filtrado de categorías de servicios mediante radio buttons y selectores CSS.
+4. **Preguntas Frecuentes (FAQ)**: Acordeón desplegable utilizando las etiquetas nativas `<details>` y `<summary>` de HTML5.
+5. **Formulario de Contacto**: Validación nativa en el navegador mediante atributos de HTML5 (`required`, `minlength`, `type`).
 
 ---
 
 ## 👤 Autor
 
 - **Fernando Gallardo**
-- ISTP Argentina - 5to Ciclo
+- ISTP Argentina - 5to Ciclo - Diseño Web

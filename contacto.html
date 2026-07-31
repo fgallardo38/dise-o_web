@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
+  <!-- Navegación Principal -->
   <nav class="navbar" id="navbar">
     <a href="index.html" class="nav-logo">
       <img src="img/logo.png" alt="Gallardo Service Store Logo">
@@ -20,16 +20,17 @@
         <span class="logo-sub">Service Store</span>
       </div>
     </a>
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="index.html"     class="nav-link">Inicio</a></li>
-      <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-      <li><a href="nosotros.html"  class="nav-link">Nosotros</a></li>
-      <li><a href="contacto.html"  class="nav-link active">Contacto</a></li>
-      <li><a href="contacto.html"  class="nav-link nav-cta"><i class="fa fa-headset"></i> Soporte</a></li>
-    </ul>
-    <div class="nav-toggle" id="navToggle">
+    <input type="checkbox" id="nav-toggle-check" class="nav-checkbox">
+    <label for="nav-toggle-check" class="nav-toggle" aria-label="Menú">
       <span></span><span></span><span></span>
-    </div>
+    </label>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+      <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+      <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+      <li><a href="contacto.html" class="nav-link nav-cta"><i class="fa fa-headset"></i> Soporte</a></li>
+    </ul>
   </nav>
 
   <!-- ===== PAGE HERO ===== -->
@@ -79,18 +80,17 @@
       <div class="contact-layout">
 
         <!-- FORMULARIO -->
-        <div class="contact-form-card reveal">
+        <div class="contact-form-card">
           <div id="formContainer">
             <p class="form-title">Envíanos un Mensaje</p>
             <p class="form-subtitle">Completa el formulario y te respondemos en menos de 2 horas en horario de atención.</p>
 
-            <form id="contactForm" novalidate>
+            <form action="#" method="POST">
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="nombre">Nombre Completo *</label>
                   <input class="form-control" type="text" id="nombre" name="nombre"
-                    placeholder="Tu nombre" required autocomplete="name">
-                  <small class="error-msg"></small>
+                    placeholder="Tu nombre" required minlength="3" autocomplete="name">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="empresa">Empresa (opcional)</label>
@@ -104,13 +104,11 @@
                   <label class="form-label" for="email">Correo Electrónico *</label>
                   <input class="form-control" type="email" id="email" name="email"
                     placeholder="tu@correo.com" required autocomplete="email">
-                  <small class="error-msg"></small>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="telefono">Teléfono *</label>
                   <input class="form-control" type="tel" id="telefono" name="telefono"
-                    placeholder="+51 999 888 777" required autocomplete="tel">
-                  <small class="error-msg"></small>
+                    placeholder="+51 999 888 777" required minlength="7" autocomplete="tel">
                 </div>
               </div>
 
@@ -127,12 +125,11 @@
                   <option value="plan">📋 Planes de Soporte Mensual</option>
                   <option value="otro">❓ Otro / Consulta general</option>
                 </select>
-                <small class="error-msg"></small>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="urgencia">Nivel de Urgencia</label>
-                <div class="form-row" id="urgencia-group">
+                <label class="form-label">Nivel de Urgencia</label>
+                <div class="form-row">
                   <label class="form-label">
                     <input type="radio" name="urgencia" value="baja" checked>
                     🟢 Normal
@@ -151,11 +148,7 @@
               <div class="form-group">
                 <label class="form-label" for="mensaje">Descripción del Problema *</label>
                 <textarea class="form-control" id="mensaje" name="mensaje"
-                  placeholder="Describe detalladamente el problema o consulta. Cuanta más información nos des, mejor podremos ayudarte..." required rows="5"></textarea>
-                <small class="error-msg"></small>
-                <small class="text-muted mt-2">
-                  <span id="charCount">0</span>/500 caracteres
-                </small>
+                  placeholder="Describe detalladamente el problema o consulta..." required minlength="10" maxlength="500" rows="5"></textarea>
               </div>
 
               <div class="form-group">
@@ -166,20 +159,10 @@
                 </label>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-full mt-2" id="submitBtn">
+              <button type="submit" class="btn btn-primary btn-full mt-2">
                 <i class="fa fa-paper-plane"></i> Enviar Mensaje
               </button>
             </form>
-          </div>
-
-          <!-- Mensaje de éxito -->
-          <div class="form-success" id="formSuccess">
-            <span class="success-icon">✅</span>
-            <h3>¡Mensaje Enviado!</h3>
-            <p>Gracias por contactarnos. Te responderemos en menos de 2 horas en horario de atención.</p>
-            <button class="btn btn-secondary mt-6" id="resetFormBtn">
-              Enviar otro mensaje
-            </button>
           </div>
         </div>
 
@@ -303,66 +286,66 @@
         <p class="section-desc">Respondemos las preguntas más comunes de nuestros clientes.</p>
       </div>
 
-      <div class="faq-list reveal">
-        <div class="faq-item">
-          <div class="faq-question">
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">
             ¿El diagnóstico inicial tiene costo?
-            <span class="faq-icon"><i class="fa fa-plus"></i></span>
-          </div>
+            <span class="faq-icon"><i class="fa fa-chevron-down"></i></span>
+          </summary>
           <div class="faq-answer">
             <p>No, el diagnóstico es completamente gratuito para la primera visita o consulta remota. Solo pagas si decides proceder con la reparación o servicio.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item">
+          <summary class="faq-question">
             ¿Cuánto tiempo tarda una reparación típica?
-            <span class="faq-icon"><i class="fa fa-plus"></i></span>
-          </div>
+            <span class="faq-icon"><i class="fa fa-chevron-down"></i></span>
+          </summary>
           <div class="faq-answer">
             <p>La mayoría de reparaciones se completan en 24 a 48 horas. Servicios de software como instalación de Windows o eliminación de virus pueden realizarse el mismo día.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item">
+          <summary class="faq-question">
             ¿Ofrecen garantía en sus servicios?
-            <span class="faq-icon"><i class="fa fa-plus"></i></span>
-          </div>
+            <span class="faq-icon"><i class="fa fa-chevron-down"></i></span>
+          </summary>
           <div class="faq-answer">
             <p>Sí. Todos nuestros servicios cuentan con garantía mínima de 30 días. Los planes mensual incluyen garantía extendida de hasta 90 días. Si el problema regresa, lo resolvemos sin costo adicional.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item">
+          <summary class="faq-question">
             ¿Pueden venir a mi domicilio o empresa?
-            <span class="faq-icon"><i class="fa fa-plus"></i></span>
-          </div>
+            <span class="faq-icon"><i class="fa fa-chevron-down"></i></span>
+          </summary>
           <div class="faq-answer">
             <p>Sí, ofrecemos servicio a domicilio en Lima Metropolitana. El costo de visita varía según el distrito. También contamos con soporte remoto para resolver muchos problemas sin necesidad de desplazamiento.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item">
+          <summary class="faq-question">
             ¿Qué formas de pago aceptan?
-            <span class="faq-icon"><i class="fa fa-plus"></i></span>
-          </div>
+            <span class="faq-icon"><i class="fa fa-chevron-down"></i></span>
+          </summary>
           <div class="faq-answer">
             <p>Aceptamos efectivo, transferencia bancaria, Yape, Plin y tarjetas de débito/crédito (Visa, Mastercard). Para servicios corporativos también emitimos facturas con RUC.</p>
           </div>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <div class="faq-question">
+        <details class="faq-item">
+          <summary class="faq-question">
             ¿Trabajan con todas las marcas de computadoras?
-            <span class="faq-icon"><i class="fa fa-plus"></i></span>
-          </div>
+            <span class="faq-icon"><i class="fa fa-chevron-down"></i></span>
+          </summary>
           <div class="faq-answer">
             <p>Sí, trabajamos con todas las marcas: HP, Dell, Lenovo, ASUS, Acer, Apple, MSI, Samsung y más. Tenemos repuestos certificados y acceso a componentes originales para las marcas más populares.</p>
           </div>
-        </div>
+        </details>
       </div>
     </div>
   </section>
@@ -417,6 +400,5 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
 </body>
 </html>

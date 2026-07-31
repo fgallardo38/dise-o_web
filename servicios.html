@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
+  <!-- Navegación Principal -->
   <nav class="navbar" id="navbar">
     <a href="index.html" class="nav-logo">
       <img src="img/logo.png" alt="Gallardo Service Store Logo">
@@ -20,16 +20,17 @@
         <span class="logo-sub">Service Store</span>
       </div>
     </a>
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="index.html"     class="nav-link">Inicio</a></li>
-      <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
-      <li><a href="nosotros.html"  class="nav-link">Nosotros</a></li>
-      <li><a href="contacto.html"  class="nav-link">Contacto</a></li>
-      <li><a href="contacto.html"  class="nav-link nav-cta"><i class="fa fa-headset"></i> Soporte</a></li>
-    </ul>
-    <div class="nav-toggle" id="navToggle">
+    <input type="checkbox" id="nav-toggle-check" class="nav-checkbox">
+    <label for="nav-toggle-check" class="nav-toggle" aria-label="Menú">
       <span></span><span></span><span></span>
-    </div>
+    </label>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+      <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+      <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      <li><a href="contacto.html" class="nav-link nav-cta"><i class="fa fa-headset"></i> Soporte</a></li>
+    </ul>
   </nav>
 
   <!-- ===== PAGE HERO ===== -->
@@ -94,14 +95,21 @@
         <h2 class="section-title">Todos Nuestros Servicios</h2>
       </div>
 
-      <!-- Filtros -->
-      <div class="filter-bar reveal">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="hardware">Hardware</button>
-        <button class="filter-btn" data-filter="software">Software</button>
-        <button class="filter-btn" data-filter="redes">Redes</button>
-        <button class="filter-btn" data-filter="seguridad">Seguridad</button>
-        <button class="filter-btn" data-filter="datos">Datos</button>
+      <!-- Filtros de catálogo -->
+      <input type="radio" name="service-filter" id="filter-all" class="filter-radio" checked>
+      <input type="radio" name="service-filter" id="filter-hardware" class="filter-radio">
+      <input type="radio" name="service-filter" id="filter-software" class="filter-radio">
+      <input type="radio" name="service-filter" id="filter-redes" class="filter-radio">
+      <input type="radio" name="service-filter" id="filter-seguridad" class="filter-radio">
+      <input type="radio" name="service-filter" id="filter-datos" class="filter-radio">
+
+      <div class="filter-bar">
+        <label for="filter-all" class="filter-btn">Todos</label>
+        <label for="filter-hardware" class="filter-btn">Hardware</label>
+        <label for="filter-software" class="filter-btn">Software</label>
+        <label for="filter-redes" class="filter-btn">Redes</label>
+        <label for="filter-seguridad" class="filter-btn">Seguridad</label>
+        <label for="filter-datos" class="filter-btn">Datos</label>
       </div>
 
       <div class="grid-3" id="servicesGrid">
@@ -513,6 +521,5 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallardo Service Store - Catálogo completo de servicios técnicos: reparación de computadoras, redes, software, ciberseguridad y más.">
+  <meta name="keywords" content="servicios técnicos, reparación laptop, instalación software, redes WiFi, antivirus">
+  <title>Servicios | Gallardo Service Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="img/logo.png" alt="Gallardo Service Store Logo">
+      <div class="logo-text">
+        <span class="logo-name">GALLARDO</span>
+        <span class="logo-sub">Service Store</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html"     class="nav-link">Inicio</a></li>
+      <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+      <li><a href="nosotros.html"  class="nav-link">Nosotros</a></li>
+      <li><a href="contacto.html"  class="nav-link">Contacto</a></li>
+      <li><a href="contacto.html"  class="nav-link nav-cta"><i class="fa fa-headset"></i> Soporte</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span class="sep">›</span>
+        <span>Servicios</span>
+      </div>
+      <h1 class="section-title hero-title-lg">
+        Nuestros <span class="text-gradient-blue">Servicios</span>
+      </h1>
+      <p class="section-desc mt-4">
+        Soluciones tecnológicas integrales para hogares y empresas. Diagnóstico gratuito en tu primera visita.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PROCESO DE ATENCIÓN ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">¿Cómo trabajamos?</span>
+        <h2 class="section-title">Nuestro Proceso</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-num">1</div>
+          <p class="process-title">Contacto</p>
+          <p class="process-desc">Nos llamas o escribes describiendo el problema</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="process-num">2</div>
+          <p class="process-title">Diagnóstico</p>
+          <p class="process-desc">Evaluamos el equipo de forma gratuita</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="process-num">3</div>
+          <p class="process-title">Presupuesto</p>
+          <p class="process-desc">Te damos un precio claro y sin sorpresas</p>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="process-num">4</div>
+          <p class="process-title">Reparación</p>
+          <p class="process-desc">Ejecutamos el servicio con garantía</p>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-num">5</div>
+          <p class="process-title">Entrega</p>
+          <p class="process-desc">Tu equipo listo, probado y funcionando</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATÁLOGO DE SERVICIOS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Catálogo Completo</span>
+        <h2 class="section-title">Todos Nuestros Servicios</h2>
+      </div>
+
+      <!-- Filtros -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+        <button class="filter-btn" data-filter="redes">Redes</button>
+        <button class="filter-btn" data-filter="seguridad">Seguridad</button>
+        <button class="filter-btn" data-filter="datos">Datos</button>
+      </div>
+
+      <div class="grid-3" id="servicesGrid">
+        <!-- Hardware -->
+        <div class="service-detail-card reveal reveal-delay-1" data-cat="hardware">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-blue">🔧</div>
+            <div class="service-card-info">
+              <h3>Reparación de Laptops</h3>
+              <span class="service-card-cat">Hardware</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Reparamos todo tipo de laptops: pantallas rotas, teclados dañados, bisagras, puertos USB,
+              baterías y placas madre.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Cambio de pantalla LCD/LED</li>
+              <li><i class="fa fa-circle-dot"></i> Reemplazo de teclado y touchpad</li>
+              <li><i class="fa fa-circle-dot"></i> Sustitución de batería</li>
+              <li><i class="fa fa-circle-dot"></i> Reparación de bisagras</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">Desde S/80</span>
+              <span class="service-price-unit">Según diagnóstico</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> 24–48h</div>
+          </div>
+        </div>
+
+        <!-- Hardware -->
+        <div class="service-detail-card reveal reveal-delay-2" data-cat="hardware">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-gold">🖥️</div>
+            <div class="service-card-info">
+              <h3>Reparación de PC Desktop</h3>
+              <span class="service-card-cat">Hardware</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Diagnóstico y reparación completa de computadoras de escritorio: fuentes de poder,
+              RAM, almacenamiento, tarjetas gráficas.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Cambio de fuente de poder</li>
+              <li><i class="fa fa-circle-dot"></i> Upgrade de RAM y SSD</li>
+              <li><i class="fa fa-circle-dot"></i> Reparación placa madre</li>
+              <li><i class="fa fa-circle-dot"></i> Instalación de componentes</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">Desde S/60</span>
+              <span class="service-price-unit">Según diagnóstico</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> 1–3 días</div>
+          </div>
+        </div>
+
+        <!-- Hardware -->
+        <div class="service-detail-card reveal reveal-delay-3" data-cat="hardware">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-purple">🖨️</div>
+            <div class="service-card-info">
+              <h3>Reparación de Impresoras</h3>
+              <span class="service-card-cat">Hardware</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Servicio técnico para impresoras de tinta, láser y multifuncional.
+              Limpieza de cabezales, cambio de rodillos y cartuchos.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Limpieza profunda de cabezales</li>
+              <li><i class="fa fa-circle-dot"></i> Reemplazo de rodillos</li>
+              <li><i class="fa fa-circle-dot"></i> Reseteo de contador</li>
+              <li><i class="fa fa-circle-dot"></i> Configuración de red</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">Desde S/40</span>
+              <span class="service-price-unit">Según diagnóstico</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> Mismo día</div>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div class="service-detail-card reveal reveal-delay-1" data-cat="software">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-green">💿</div>
+            <div class="service-card-info">
+              <h3>Instalación de Windows</h3>
+              <span class="service-card-cat">Software</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Instalación limpia de Windows 10/11, drivers, actualizaciones y programas esenciales.
+              Tu equipo como nuevo.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Windows 10 / 11 original</li>
+              <li><i class="fa fa-circle-dot"></i> Drivers actualizados</li>
+              <li><i class="fa fa-circle-dot"></i> Office incluido</li>
+              <li><i class="fa fa-circle-dot"></i> Antivirus configurado</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">S/50</span>
+              <span class="service-price-unit">Precio fijo</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> 2–3 horas</div>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div class="service-detail-card reveal reveal-delay-2" data-cat="software">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-blue">⚙️</div>
+            <div class="service-card-info">
+              <h3>Optimización del Sistema</h3>
+              <span class="service-card-cat">Software</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Limpieza profunda del sistema, eliminación de programas innecesarios y optimización
+              para máximo rendimiento.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Limpieza de registro</li>
+              <li><i class="fa fa-circle-dot"></i> Desfragmentación de disco</li>
+              <li><i class="fa fa-circle-dot"></i> Gestión de inicio</li>
+              <li><i class="fa fa-circle-dot"></i> Actualización de drivers</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">S/35</span>
+              <span class="service-price-unit">Precio fijo</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> 1–2 horas</div>
+          </div>
+        </div>
+
+        <!-- Redes -->
+        <div class="service-detail-card reveal reveal-delay-3" data-cat="redes">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-cyan">🌐</div>
+            <div class="service-card-info">
+              <h3>Configuración de Redes</h3>
+              <span class="service-card-cat">Redes</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Instalación y configuración de routers, switches y puntos de acceso WiFi para hogares y empresas.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Configuración de router</li>
+              <li><i class="fa fa-circle-dot"></i> Extensores de señal WiFi</li>
+              <li><i class="fa fa-circle-dot"></i> Redes LAN cableadas</li>
+              <li><i class="fa fa-circle-dot"></i> VPN empresarial</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">Desde S/70</span>
+              <span class="service-price-unit">Según complejidad</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> Mismo día</div>
+          </div>
+        </div>
+
+        <!-- Seguridad -->
+        <div class="service-detail-card reveal reveal-delay-1" data-cat="seguridad">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-red">🛡️</div>
+            <div class="service-card-info">
+              <h3>Eliminación de Virus</h3>
+              <span class="service-card-cat">Seguridad</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Detección y eliminación completa de virus, malware, ransomware y spyware.
+              Recuperación del sistema afectado.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Escaneo completo del sistema</li>
+              <li><i class="fa fa-circle-dot"></i> Eliminación de malware</li>
+              <li><i class="fa fa-circle-dot"></i> Protección futura</li>
+              <li><i class="fa fa-circle-dot"></i> Recuperación de archivos</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">S/45</span>
+              <span class="service-price-unit">Precio fijo</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> 2–4 horas</div>
+          </div>
+        </div>
+
+        <!-- Datos -->
+        <div class="service-detail-card reveal reveal-delay-2" data-cat="datos">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-gold">💾</div>
+            <div class="service-card-info">
+              <h3>Recuperación de Datos</h3>
+              <span class="service-card-cat">Datos</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Recuperamos archivos perdidos de discos dañados, formatados accidentalmente o atacados por ransomware.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> HDD / SSD / USB / SD</li>
+              <li><i class="fa fa-circle-dot"></i> Tasa de éxito: 95%</li>
+              <li><i class="fa fa-circle-dot"></i> Sin recuperación = sin cobro</li>
+              <li><i class="fa fa-circle-dot"></i> Backup preventivo</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">Desde S/100</span>
+              <span class="service-price-unit">Según caso</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> 1–5 días</div>
+          </div>
+        </div>
+
+        <!-- Mantenimiento -->
+        <div class="service-detail-card reveal reveal-delay-3" data-cat="hardware">
+          <div class="service-card-header">
+            <div class="service-card-icon icon-purple">🧹</div>
+            <div class="service-card-info">
+              <h3>Mantenimiento Preventivo</h3>
+              <span class="service-card-cat">Hardware</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-card-desc">
+              Limpieza interna completa, cambio de pasta térmica y revisión general para prolongar la vida de tu equipo.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa fa-circle-dot"></i> Limpieza interna con aire</li>
+              <li><i class="fa fa-circle-dot"></i> Cambio de pasta térmica</li>
+              <li><i class="fa fa-circle-dot"></i> Revisión de componentes</li>
+              <li><i class="fa fa-circle-dot"></i> Informe de estado</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <div>
+              <span class="service-price">S/30</span>
+              <span class="service-price-unit">Precio fijo</span>
+            </div>
+            <div class="service-time"><i class="fa fa-clock"></i> 1 hora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TABLA COMPARATIVA ===== -->
+  <section class="comparison-section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Comparativa</span>
+        <h2 class="section-title">Tabla de Planes de Soporte</h2>
+        <p class="section-desc">Compara nuestros planes y elige el que mejor se adapte a tus necesidades.</p>
+      </div>
+      <div class="table-wrapper reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Básico<br><small class="text-muted">S/80/mes</small></th>
+              <th>Profesional<br><small class="text-blue">S/180/mes</small></th>
+              <th>Empresarial<br><small class="text-gold">S/350/mes</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Soporte Remoto</strong></td>
+              <td>8h/día Lun–Sáb</td>
+              <td>24/7</td>
+              <td>24/7 Prioritario</td>
+            </tr>
+            <tr>
+              <td><strong>Visitas Técnicas</strong></td>
+              <td>2 por mes</td>
+              <td>5 por mes</td>
+              <td>Ilimitadas</td>
+            </tr>
+            <tr>
+              <td><strong>Tiempo de Respuesta</strong></td>
+              <td>8 horas</td>
+              <td>4 horas</td>
+              <td>2 horas</td>
+            </tr>
+            <tr>
+              <td><strong>Antivirus Empresarial</strong></td>
+              <td class="no"><i class="fa fa-times no"></i></td>
+              <td class="yes"><i class="fa fa-check yes"></i></td>
+              <td class="yes"><i class="fa fa-check yes"></i></td>
+            </tr>
+            <tr>
+              <td><strong>Backup en la Nube</strong></td>
+              <td class="no"><i class="fa fa-times no"></i></td>
+              <td>50 GB</td>
+              <td>500 GB</td>
+            </tr>
+            <tr>
+              <td><strong>Firewall Corporativo</strong></td>
+              <td class="no"><i class="fa fa-times no"></i></td>
+              <td class="no"><i class="fa fa-times no"></i></td>
+              <td class="yes"><i class="fa fa-check yes"></i></td>
+            </tr>
+            <tr>
+              <td><strong>Reporte Mensual</strong></td>
+              <td class="no"><i class="fa fa-times no"></i></td>
+              <td class="yes"><i class="fa fa-check yes"></i></td>
+              <td class="yes"><i class="fa fa-check yes"></i></td>
+            </tr>
+            <tr>
+              <td><strong>Equipos Cubiertos</strong></td>
+              <td>Hasta 2</td>
+              <td>Hasta 10</td>
+              <td>Ilimitados</td>
+            </tr>
+            <tr>
+              <td><strong>Descuento en Repuestos</strong></td>
+              <td>5%</td>
+              <td>15%</td>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <td><strong>Garantía de Servicio</strong></td>
+              <td>30 días</td>
+              <td>60 días</td>
+              <td>90 días</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-10 reveal">
+        <a href="contacto.html" class="btn btn-primary"><i class="fa fa-envelope"></i> Solicitar Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-name">GALLARDO</span>
+          <span class="logo-sub">Service Store</span>
+          <p class="footer-desc">Tu aliado tecnológico de confianza para hogares y empresas.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Reparación Hardware</a></li>
+            <li><a href="servicios.html">Instalación Software</a></li>
+            <li><a href="servicios.html">Redes & WiFi</a></li>
+            <li><a href="servicios.html">Recuperación Datos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fa fa-phone"></i> +51 999 655 212</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i> fgallardo38@gmail.com</a></li>
+            <li><a href="#"><i class="fa fa-map-marker-alt"></i> Av. Tecnología 123, Lima</a></li>
+            <li><a href="#"><i class="fa fa-clock"></i> Lun–Sáb: 8am – 8pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span>Gallardo Service Store</span>. Todos los derechos reservados.</p>
+        <p>ISTP Argentina · Diseño Web 5to Ciclo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

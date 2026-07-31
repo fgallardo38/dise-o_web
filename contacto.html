@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a Gallardo Service Store. Formulario de contacto, ubicación, horarios y canales de atención para soporte técnico.">
+  <meta name="keywords" content="contacto, soporte técnico, atención al cliente, formulario, ubicación">
+  <title>Contacto | Gallardo Service Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="img/logo.png" alt="Gallardo Service Store Logo">
+      <div class="logo-text">
+        <span class="logo-name">GALLARDO</span>
+        <span class="logo-sub">Service Store</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html"     class="nav-link">Inicio</a></li>
+      <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+      <li><a href="nosotros.html"  class="nav-link">Nosotros</a></li>
+      <li><a href="contacto.html"  class="nav-link active">Contacto</a></li>
+      <li><a href="contacto.html"  class="nav-link nav-cta"><i class="fa fa-headset"></i> Soporte</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span class="sep">›</span>
+        <span>Contacto</span>
+      </div>
+      <h1 class="section-title hero-title-lg">
+        Estamos aquí para <span class="text-gradient-gold">Ayudarte</span>
+      </h1>
+      <p class="section-desc mt-4">
+        Escríbenos, llámanos o visítanos. Respondemos en menos de 2 horas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CANALES RÁPIDOS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="quick-channels reveal quick-channels-wrapper">
+        <a href="https://wa.me/51999655212" class="channel-btn whatsapp" target="_blank">
+          <span class="ch-icon">💬</span>
+          <span class="ch-label">WhatsApp</span>
+        </a>
+        <a href="tel:+51999655212" class="channel-btn phone">
+          <span class="ch-icon">📞</span>
+          <span class="ch-label">Llamar ahora</span>
+        </a>
+        <a href="mailto:fgallardo38@gmail.com" class="channel-btn email">
+          <span class="ch-icon">✉️</span>
+          <span class="ch-label">Enviar Email</span>
+        </a>
+        <a href="#mapa" class="channel-btn maps">
+          <span class="ch-icon">📍</span>
+          <span class="ch-label">Ver Ubicación</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO PRINCIPAL ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- FORMULARIO -->
+        <div class="contact-form-card reveal">
+          <div id="formContainer">
+            <p class="form-title">Envíanos un Mensaje</p>
+            <p class="form-subtitle">Completa el formulario y te respondemos en menos de 2 horas en horario de atención.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="nombre">Nombre Completo *</label>
+                  <input class="form-control" type="text" id="nombre" name="nombre"
+                    placeholder="Tu nombre" required autocomplete="name">
+                  <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="empresa">Empresa (opcional)</label>
+                  <input class="form-control" type="text" id="empresa" name="empresa"
+                    placeholder="Nombre de tu empresa" autocomplete="organization">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="email">Correo Electrónico *</label>
+                  <input class="form-control" type="email" id="email" name="email"
+                    placeholder="tu@correo.com" required autocomplete="email">
+                  <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="telefono">Teléfono *</label>
+                  <input class="form-control" type="tel" id="telefono" name="telefono"
+                    placeholder="+51 999 888 777" required autocomplete="tel">
+                  <small class="error-msg"></small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="servicio">Tipo de Servicio *</label>
+                <select class="form-control" id="servicio" name="servicio" required>
+                  <option value="" disabled selected>Selecciona el servicio que necesitas...</option>
+                  <option value="hardware">🔧 Reparación de Hardware</option>
+                  <option value="software">💿 Instalación / Soporte Software</option>
+                  <option value="redes">🌐 Redes y Conectividad</option>
+                  <option value="seguridad">🛡️ Ciberseguridad y Antivirus</option>
+                  <option value="datos">💾 Recuperación de Datos</option>
+                  <option value="mantenimiento">⚙️ Mantenimiento Preventivo</option>
+                  <option value="plan">📋 Planes de Soporte Mensual</option>
+                  <option value="otro">❓ Otro / Consulta general</option>
+                </select>
+                <small class="error-msg"></small>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="urgencia">Nivel de Urgencia</label>
+                <div class="form-row" id="urgencia-group">
+                  <label class="form-label">
+                    <input type="radio" name="urgencia" value="baja" checked>
+                    🟢 Normal
+                  </label>
+                  <label class="form-label">
+                    <input type="radio" name="urgencia" value="media">
+                    🟡 Urgente
+                  </label>
+                  <label class="form-label">
+                    <input type="radio" name="urgencia" value="alta">
+                    🔴 Crítico
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="mensaje">Descripción del Problema *</label>
+                <textarea class="form-control" id="mensaje" name="mensaje"
+                  placeholder="Describe detalladamente el problema o consulta. Cuanta más información nos des, mejor podremos ayudarte..." required rows="5"></textarea>
+                <small class="error-msg"></small>
+                <small class="text-muted mt-2">
+                  <span id="charCount">0</span>/500 caracteres
+                </small>
+              </div>
+
+              <div class="form-group">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos" class="text-muted">
+                  Acepto la <a href="#" class="text-blue">Política de Privacidad</a>
+                  y consiento el tratamiento de mis datos para recibir respuesta a mi consulta.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full mt-2" id="submitBtn">
+                <i class="fa fa-paper-plane"></i> Enviar Mensaje
+              </button>
+            </form>
+          </div>
+
+          <!-- Mensaje de éxito -->
+          <div class="form-success" id="formSuccess">
+            <span class="success-icon">✅</span>
+            <h3>¡Mensaje Enviado!</h3>
+            <p>Gracias por contactarnos. Te responderemos en menos de 2 horas en horario de atención.</p>
+            <button class="btn btn-secondary mt-6" id="resetFormBtn">
+              Enviar otro mensaje
+            </button>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="contact-sidebar">
+
+          <!-- Info de contacto -->
+          <div class="info-card reveal reveal-delay-1">
+            <p class="info-card-title"><i class="fa fa-address-book"></i> Información de Contacto</p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa fa-phone"></i></div>
+              <div>
+                <span class="contact-item-label">Teléfono principal</span>
+                <div class="contact-item-value"><a href="tel:+51999655212">+51 999 655 212</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <span class="contact-item-label">WhatsApp</span>
+                <div class="contact-item-value"><a href="https://wa.me/51999655212">+51 999 655 212</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <span class="contact-item-label">Correo electrónico</span>
+                <div class="contact-item-value"><a href="mailto:fgallardo38@gmail.com">fgallardo38@gmail.com</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-item-label">Dirección</span>
+                <div class="contact-item-value">Av. Tecnología 123, Miraflores, Lima</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Horarios -->
+          <div class="info-card reveal reveal-delay-2">
+            <p class="info-card-title"><i class="fa fa-clock"></i> Horario de Atención</p>
+            <div class="schedule-item">
+              <span class="schedule-day">Lunes – Viernes</span>
+              <span class="schedule-time">8:00 – 20:00</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-day">Sábado</span>
+              <span class="schedule-time">9:00 – 18:00</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-day">Domingo</span>
+              <span class="schedule-closed">Cerrado</span>
+            </div>
+            <div class="notice-box">
+              <p class="notice-text">
+                <span class="notice-dot"></span>
+                Soporte remoto disponible 24/7 para clientes con plan mensual
+              </p>
+            </div>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="info-card reveal reveal-delay-3">
+            <p class="info-card-title"><i class="fa fa-share-nodes"></i> Redes Sociales</p>
+            <div class="contact-sidebar">
+              <a href="#" class="social-card-link social-card-fb">
+                <i class="fab fa-facebook-f"></i>
+                <span class="schedule-day">Gallardo Service Store</span>
+              </a>
+              <a href="#" class="social-card-link social-card-ig">
+                <i class="fab fa-instagram"></i>
+                <span class="schedule-day">@gallardo.service</span>
+              </a>
+              <a href="#" class="social-card-link social-card-yt">
+                <i class="fab fa-youtube"></i>
+                <span class="schedule-day">Gallardo Service Store</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAPA ===== -->
+  <section class="section section-alt" id="mapa">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Ubicación</span>
+        <h2 class="section-title">Encuéntranos</h2>
+        <p class="section-desc">Visítanos en nuestro taller. Contamos con estacionamiento disponible.</p>
+      </div>
+      <div class="map-container reveal">
+        <div class="map-pin">
+          <span class="pin-icon">📍</span>
+          <div class="map-pin-label">
+            <strong>Gallardo Service Store</strong><br>
+            <span class="text-muted">Av. Tecnología 123, Miraflores, Lima</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 reveal">
+        <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">
+          <i class="fa fa-map-location-dot"></i> Abrir en Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Preguntas Frecuentes</span>
+        <h2 class="section-title">¿Tienes Dudas?</h2>
+        <p class="section-desc">Respondemos las preguntas más comunes de nuestros clientes.</p>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <div class="faq-question">
+            ¿El diagnóstico inicial tiene costo?
+            <span class="faq-icon"><i class="fa fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>No, el diagnóstico es completamente gratuito para la primera visita o consulta remota. Solo pagas si decides proceder con la reparación o servicio.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ¿Cuánto tiempo tarda una reparación típica?
+            <span class="faq-icon"><i class="fa fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>La mayoría de reparaciones se completan en 24 a 48 horas. Servicios de software como instalación de Windows o eliminación de virus pueden realizarse el mismo día.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ¿Ofrecen garantía en sus servicios?
+            <span class="faq-icon"><i class="fa fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Sí. Todos nuestros servicios cuentan con garantía mínima de 30 días. Los planes mensual incluyen garantía extendida de hasta 90 días. Si el problema regresa, lo resolvemos sin costo adicional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ¿Pueden venir a mi domicilio o empresa?
+            <span class="faq-icon"><i class="fa fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Sí, ofrecemos servicio a domicilio en Lima Metropolitana. El costo de visita varía según el distrito. También contamos con soporte remoto para resolver muchos problemas sin necesidad de desplazamiento.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ¿Qué formas de pago aceptan?
+            <span class="faq-icon"><i class="fa fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Aceptamos efectivo, transferencia bancaria, Yape, Plin y tarjetas de débito/crédito (Visa, Mastercard). Para servicios corporativos también emitimos facturas con RUC.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ¿Trabajan con todas las marcas de computadoras?
+            <span class="faq-icon"><i class="fa fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Sí, trabajamos con todas las marcas: HP, Dell, Lenovo, ASUS, Acer, Apple, MSI, Samsung y más. Tenemos repuestos certificados y acceso a componentes originales para las marcas más populares.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-name">GALLARDO</span>
+          <span class="logo-sub">Service Store</span>
+          <p class="footer-desc">Tu aliado tecnológico de confianza para hogares y empresas.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Reparación Hardware</a></li>
+            <li><a href="servicios.html">Instalación Software</a></li>
+            <li><a href="servicios.html">Redes & WiFi</a></li>
+            <li><a href="servicios.html">Recuperación Datos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fa fa-phone"></i> +51 999 655 212</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i> fgallardo38@gmail.com</a></li>
+            <li><a href="#"><i class="fa fa-map-marker-alt"></i> Av. Tecnología 123, Lima</a></li>
+            <li><a href="#"><i class="fa fa-clock"></i> Lun–Sáb: 8am – 8pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span>Gallardo Service Store</span>. Todos los derechos reservados.</p>
+        <p>ISTP Argentina · Diseño Web 5to Ciclo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
